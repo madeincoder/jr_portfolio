@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retro Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- CRT Overlay Effects -->
+  <div class="crt-overlay"></div>
+  <div class="noise-overlay"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">&gt;&gt; _portfolio</a>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links">
+        <button class="nav-close" aria-label="Close menu">
+          <span class="nav-close-icon">✕</span>
+        </button>
+        <ul>
+          <li><a href="#home" class="nav-link">// home</a></li>
+          <li><a href="#about" class="nav-link">// about</a></li>
+          <li><a href="#services" class="nav-link">// services</a></li>
+          <li><a href="#projects" class="nav-link">// projects</a></li>
+
+          <li><a href="#contact" class="nav-link">// contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <p class="hero-prefix">&gt; Hello, world! My name is</p>
+      <h1 class="hero-title glitch" data-text="Jahangir Alom">Jahangir Alom</h1>
+      <p class="hero-subtitle">
+        <span class="typing-text"></span><span class="cursor-blink">|</span>
+      </p>
+      <p class="hero-tagline">&lt; full-stack developer / retro enthusiast / pixel wizard &gt;</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">[ View My Work ]</a>
+        <a href="#contact" class="btn btn-secondary">[ Get In Touch ]</a>
+      </div>
+      <div class="hero-status">
+        <span class="status-dot"></span>
+        <span class="status-text">STATUS: AVAILABLE FOR HIRE</span>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>▼ SCROLL ▼</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="section-tag">// 01</span>
+        <span class="section-label">ABOUT_ME</span>
+      </h2>
+      <div class="about-grid">
+        <div class="about-terminal">
+          <div class="terminal-header">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+            <span class="terminal-title">about.exe</span>
+          </div>
+          <div class="terminal-body">
+            <p><span class="prompt">$</span> <span class="command">cat about_me.txt</span></p>
+            <p class="terminal-output">
+              Hey there! I'm Jahangir Alom — a pixel-obsessed full-stack developer<br>
+              who builds digital experiences with a retro twist.<br><br>
+              By day, I craft modern web applications. By night, I'm<br>
+              hunting for the perfect color palette and debugging<br>
+              my latest creative project.<br><br>
+              I believe great code is like a classic game — it should<br>
+              be performant, delightful, and leave people smiling.
+            </p>
+            <p><span class="prompt">$</span> <span class="command">uptime</span></p>
+            <p class="terminal-output">5+ years of coding experience. No plans to reboot.</p>
+            <p><span class="prompt">$</span> <span class="command cursor-blink">_</span></p>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-icon">🏆</span>
+            <span class="stat-number" data-target="50">0</span>
+            <span class="stat-label">Projects Completed</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-icon">☕</span>
+            <span class="stat-number" data-target="999">0</span>
+            <span class="stat-label">Cups of Coffee</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-icon">💻</span>
+            <span class="stat-number" data-target="12">0</span>
+            <span class="stat-label">Languages Known</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-icon">🎮</span>
+            <span class="stat-number" data-target="255">0</span>
+            <span class="stat-label">High Scores Beaten</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section services">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="section-tag">// 02</span>
+        <span class="section-label">SERVICES.CMD</span>
+      </h2>
+      <div class="services-grid">
+        <div class="service-card" data-tilt>
+          <div class="service-icon">🌐</div>
+          <h3 class="service-name">Web Development</h3>
+          <p class="service-desc">Full-stack web apps with modern frameworks, pixel-perfect responsive design, and performance optimization that'd make a 386 blush.</p>
+          <div class="service-cta">
+            <a href="webdev/index.html" class="project-link">[ learn more ]</a>
+          </div>
+        </div>
+
+        <div class="service-card" data-tilt>
+          <div class="service-icon">🎨</div>
+          <h3 class="service-name">UI/UX Design</h3>
+          <p class="service-desc">Retro-futuristic interfaces, wireframes with neon flair, and user experiences that balance nostalgia with modern usability standards.</p>
+          <div class="service-cta">
+            <a href="uiux/index.html" class="project-link">[ learn more ]</a>
+          </div>
+        </div>
+
+        <div class="service-card" data-tilt>
+          <div class="service-icon">🕹️</div>
+          <h3 class="service-name">Retro Consulting</h3>
+          <p class="service-desc">Expert advice on retro gaming tech, vintage computing restoration, pixel art direction, and chiptune music production for modern projects.</p>
+          <div class="service-cta">
+            <a href="retro/index.html" class="project-link">[ learn more ]</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="section-tag">// 03</span>
+        <span class="section-label">PROJECTS.EXE</span>
+      </h2>
+      <div class="projects-grid">
+        <div class="project-card" data-tilt>
+          <div class="project-art">
+            <div class="pixel-art pixel-gameboy">🎮</div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-name">PixelQuest RPG</h3>
+            <p class="project-desc">A browser-based RPG with retro pixel graphics, turn-based combat, and a procedurally generated world.</p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Canvas</span>
+              <span class="tag">TypeScript</span>
+            </div>
+            <div class="project-links">
+              <a href="pixelquest/index.html" class="project-link">[ details ]</a>
+              <a href="#" class="project-link">[ source ]</a>
+            </div>
+          </div>
+          <div class="project-floppy">
+            <div class="floppy-label">
+              <span>PIXELQUEST</span>
+              <span>v1.0</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-tilt>
+          <div class="project-art">
+            <div class="pixel-art pixel-cassette">📼</div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-name">SynthWave FM</h3>
+            <p class="project-desc">A retro-styled music streaming app with vinyl-spinning animations and a chiptune visualizer.</p>
+            <div class="project-tags">
+              <span class="tag">Vue</span>
+              <span class="tag">Web Audio</span>
+              <span class="tag">CSS Anim</span>
+            </div>
+            <div class="project-links">
+              <a href="synthwave/index.html" class="project-link">[ details ]</a>
+              <a href="#" class="project-link">[ source ]</a>
+            </div>
+          </div>
+          <div class="project-floppy">
+            <div class="floppy-label">
+              <span>SYNTHWAVE</span>
+              <span>v2.0</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-tilt>
+          <div class="project-art">
+            <div class="pixel-art pixel-robot">🤖</div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-name">RetroChat AI</h3>
+            <p class="project-desc">An AI chatbot with a terminal UI, running on a custom LLM with a nostalgic green phosphor display.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">LLM</span>
+              <span class="tag">WebSocket</span>
+            </div>
+            <div class="project-links">
+              <a href="retrochat/index.html" class="project-link">[ details ]</a>
+              <a href="#" class="project-link">[ source ]</a>
+            </div>
+          </div>
+          <div class="project-floppy">
+            <div class="floppy-label">
+              <span>RETROCHAT</span>
+              <span>v1.5</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-tilt>
+          <div class="project-art">
+            <div class="pixel-art pixel-compiler">🔮</div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-name">ByteForge</h3>
+            <p class="project-desc">A visual code editor inspired by 80s IDEs, with syntax highlighting that looks like a neon dream.</p>
+            <div class="project-tags">
+              <span class="tag">Electron</span>
+              <span class="tag">CodeMirror</span>
+              <span class="tag">Node.js</span>
+            </div>
+            <div class="project-links">
+              <a href="byteforge/index.html" class="project-link">[ details ]</a>
+              <a href="#" class="project-link">[ source ]</a>
+            </div>
+          </div>
+          <div class="project-floppy">
+            <div class="floppy-label">
+              <span>BYTEFORGE</span>
+              <span>v3.0</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-tilt>
+          <div class="project-art">
+            <div class="pixel-art pixel-car">🏎️</div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-name">CyberDash</h3>
+            <p class="project-desc">A high-octane synthwave racing game with neon-lit tracks, endless highways, and a thumping chiptune soundtrack.</p>
+            <div class="project-tags">
+              <span class="tag">Three.js</span>
+              <span class="tag">WebGL</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="cyberdash/index.html" class="project-link">[ details ]</a>
+              <a href="#" class="project-link">[ source ]</a>
+            </div>
+          </div>
+          <div class="project-floppy">
+            <div class="floppy-label">
+              <span>CYBERDASH</span>
+              <span>v1.0</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-tilt>
+          <div class="project-art">
+            <div class="pixel-art pixel-disk">📀</div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-name">HoloVault</h3>
+            <p class="project-desc">A data visualization platform that transforms spreadsheets into holographic projections with neon wireframes and 3D charts.</p>
+            <div class="project-tags">
+              <span class="tag">D3.js</span>
+              <span class="tag">Python</span>
+              <span class="tag">Flask</span>
+            </div>
+            <div class="project-links">
+              <a href="holovault/index.html" class="project-link">[ details ]</a>
+              <a href="#" class="project-link">[ source ]</a>
+            </div>
+          </div>
+          <div class="project-floppy">
+            <div class="floppy-label">
+              <span>HOLOVAULT</span>
+              <span>v2.0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="section testimonials">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="section-tag">// 04</span>
+        <span class="section-label">TESTIMONIALS.SYS</span>
+      </h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-avatar">
+            <div class="pixel-avatar">👩‍💻</div>
+          </div>
+          <div class="testimonial-content">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">
+              "Working with Alex was like finding a rare power-up. The attention to detail and creative flair brought our vision to life. Absolute legend!"
+            </p>
+            <p class="testimonial-author">
+              <span class="testimonial-name">Sarah Chen</span>
+              <span class="testimonial-role">CTO, PixelForge Studios</span>
+            </p>
+          </div>
+          <div class="testimonial-ribbon">⭐ RECOMMENDED</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-avatar">
+            <div class="pixel-avatar">👨‍🎨</div>
+          </div>
+          <div class="testimonial-content">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">
+              "Alex delivered our project ahead of schedule and the code quality was pixel-perfect. The retro aesthetic we wanted came out even better than imagined."
+            </p>
+            <p class="testimonial-author">
+              <span class="testimonial-name">Marcus Johnson</span>
+              <span class="testimonial-role">Founder, SynthWave Labs</span>
+            </p>
+          </div>
+          <div class="testimonial-ribbon">⭐ RECOMMENDED</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-avatar">
+            <div class="pixel-avatar">🧑‍🏭</div>
+          </div>
+          <div class="testimonial-content">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">
+              "I've worked with many developers, but Alex stands out. Creative problem-solving, clean code, and a genuine passion for craft. Hired for our next project already!"
+            </p>
+            <p class="testimonial-author">
+              <span class="testimonial-name">Yuki Tanaka</span>
+              <span class="testimonial-role">Lead Designer, NeonByte</span>
+            </p>
+          </div>
+          <div class="testimonial-ribbon">⭐ RECOMMENDED</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="section faq">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="section-tag">// 05</span>
+        <span class="section-label">FAQ.DAT</span>
+      </h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span class="faq-q">Q:</span>
+            <span class="faq-text">What technologies do you work with?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>I specialize in modern web technologies (React, Vue, TypeScript, Node.js) along with Python, Three.js for 3D, and a variety of creative tools. I'm always learning new tech and love experimenting with retro-inspired stacks — think modern performance with vintage vibes.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span class="faq-q">Q:</span>
+            <span class="faq-text">How long does a typical project take?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>It depends on scope! A landing page might take 1-2 weeks, while a full web application can range from 1-6 months. I always provide a detailed timeline estimate during our initial consultation — no surprises, just honest scheduling.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span class="faq-q">Q:</span>
+            <span class="faq-text">Do you offer ongoing maintenance?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Absolutely! I offer monthly retainer packages for maintenance, updates, and feature additions. From bug fixes to performance monitoring, I've got your back long after the initial launch.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span class="faq-q">Q:</span>
+            <span class="faq-text">Can you work with my existing team?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! I'm comfortable collaborating with existing teams, whether as a contractor, consultant, or temporary lead. I integrate with your workflow — Git, Slack, Jira, you name it — and adapt to your team's culture.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span class="faq-q">Q:</span>
+            <span class="faq-text">What makes your retro style different?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>My work blends modern web performance with carefully crafted retro aesthetics — CRT effects, pixel-perfect typography, neon palettes, and chiptune influences. It's not just about looking old; it's about capturing the soul of a beloved era with today's technology.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="section-tag">// 06</span>
+        <span class="section-label">CONTACT.CFG</span>
+      </h2>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <p class="contact-intro">Want to collaborate? Got a project idea?<br>Just want to say hi?</p>
+          <p class="contact-cta">Drop me a message and I'll get back to you faster than a 56k modem!</p>
+          <div class="contact-socials">
+            <a href="#" class="social-link">[ GitHub ]</a>
+            <a href="#" class="social-link">[ LinkedIn ]</a>
+            <a href="#" class="social-link">[ Twitter ]</a>
+            <a href="#" class="social-link">[ Discord ]</a>
+          </div>
+          <div class="contact-availability">
+            <span class="status-dot"></span>
+            <span>Currently accepting new projects</span>
+          </div>
+        </div>
+        <form id="contact-form" class="contact-form">
+          <div class="form-header">
+            <span class="form-dot red"></span>
+            <span class="form-dot yellow"></span>
+            <span class="form-dot green"></span>
+            <span class="form-title">message.exe</span>
+          </div>
+          <div class="form-body">
+            <div class="form-group">
+              <label for="name" class="form-label">&gt; Enter your name:</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="e.g., Player_1" required>
+              <span class="form-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">&gt; Enter your email:</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="e.g., player@example.com" required>
+              <span class="form-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">&gt; Enter your message:</label>
+              <textarea id="message" name="message" class="form-input form-textarea" placeholder="Type your message here..." rows="4" required></textarea>
+              <span class="form-error"></span>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">
+              [ SEND MESSAGE ]
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-copy">
+          <span class="prompt">$</span> echo "© 2024 Jahangir Alom"<br>
+          <span class="footer-output">© 2024 Jahangir Alom — Built with 💖 and pixel dust</span><br>
+          <span class="prompt">$</span> <span class="cursor-blink">_</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

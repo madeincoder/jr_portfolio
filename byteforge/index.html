@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ByteForge — Retro Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="crt-overlay"></div>
+  <div class="noise-overlay"></div>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">&gt;&gt; _portfolio</a>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <button class="nav-close" aria-label="Close menu">
+          <span class="nav-close-icon">✕</span>
+        </button>
+        <ul>
+          <li><a href="../index.html#home" class="nav-link">// home</a></li>
+          <li><a href="../index.html#about" class="nav-link">// about</a></li>
+          <li><a href="../index.html#projects" class="nav-link">// projects</a></li>
+          <li><a href="../index.html#testimonials" class="nav-link">// testimonials</a></li>
+          <li><a href="../index.html#contact" class="nav-link">// contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="detail-back">
+    <a href="../index.html#projects" class="detail-back-link">← BACK TO PROJECTS</a>
+  </div>
+
+  <main class="project-detail">
+    <!-- Hero -->
+    <section class="detail-hero">
+      <div class="container">
+        <span class="detail-hero-icon">🔮</span>
+        <h1 class="detail-hero-title">ByteForge</h1>
+        <p class="detail-version">v3.0 // MAJOR_RELEASE</p>
+        <div class="detail-tags">
+          <span class="tag">Electron</span>
+          <span class="tag">CodeMirror</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">React</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Body -->
+    <section class="detail-body">
+      <div class="container">
+        <div class="detail-grid">
+          <!-- Left column -->
+          <div>
+            <h2 class="detail-section-title">// SYNOPSIS</h2>
+            <p class="detail-description">
+              ByteForge is a visual code editor that pays homage to the iconic IDEs of the 1980s while packing modern developer tools under the hood. Featuring neon syntax highlighting that looks like it belongs in a cyberpunk film, a terminal panel with green phosphor text, and customizable retro color themes, it's the perfect editor for developers who want their workspace to look as cool as their code.
+            </p>
+
+            <h2 class="detail-section-title">// KEY_FEATURES</h2>
+            <ul class="detail-features">
+              <li>Neon syntax highlighting with 12 retro-inspired color themes</li>
+              <li>Built-in terminal emulator with authentic CRT display effects</li>
+              <li>Split-pane editor with synchronized scrolling</li>
+              <li>Git integration with visual diff viewer</li>
+              <li>Plugin system supporting custom themes and extensions</li>
+              <li>Built-in preview server for web projects</li>
+              <li>Project dashboard with recent files and git status</li>
+            </ul>
+          </div>
+
+          <!-- Right column -->
+          <div>
+            <div class="detail-terminal-stats">
+              <div class="terminal-header">
+                <span class="terminal-dot red"></span>
+                <span class="terminal-dot yellow"></span>
+                <span class="terminal-dot green"></span>
+                <span class="terminal-title">project_stats.exe</span>
+              </div>
+              <div class="terminal-body">
+                <p><span class="prompt">$</span> <span class="command">cat project_info.dat</span></p>
+                <p class="terminal-output">
+                  <strong>Role:</strong> Lead Developer &amp; Product Designer<br>
+                  <strong>Timeline:</strong> 8 months (2024)<br>
+                  <strong>Team Size:</strong> 2 developers<br>
+                  <strong>Lines of Code:</strong> 32,000+<br>
+                  <strong>Downloads:</strong> 5,000+ (GitHub)
+                </p>
+                <p><span class="prompt">$</span> <span class="command">uptime</span></p>
+                <p class="terminal-output">First release Mar 2024. Now on version 3.0.</p>
+                <p><span class="prompt">$</span> <span class="command cursor-blink">_</span></p>
+              </div>
+            </div>
+
+            <h2 class="detail-section-title" style="margin-top: 32px;">// LINKS</h2>
+            <div class="detail-links">
+              <a href="#" class="detail-link-btn">▶ DOWNLOAD</a>
+              <a href="#" class="detail-link-btn secondary">⌨ VIEW SOURCE</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Screenshots -->
+        <div class="detail-screenshots">
+          <h2 class="detail-section-title">// SCREENSHOTS</h2>
+          <div class="detail-screenshots-grid">
+            <div class="detail-screenshot-main">
+              <span class="pixel-art">🔮</span>
+            </div>
+            <div class="detail-screenshot-thumbs">
+              <div class="detail-screenshot-thumb">
+                <span class="pixel-art">✨</span>
+              </div>
+              <div class="detail-screenshot-thumb">
+                <span class="pixel-art">💾</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation between projects -->
+        <div class="detail-nav-projects">
+          <a href="../retrochat/index.html" class="detail-nav-link">← PREV PROJECT</a>
+          <a href="../index.html#projects" class="detail-nav-all">← ALL PROJECTS →</a>
+          <a href="../cyberdash/index.html" class="detail-nav-link">NEXT PROJECT →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-copy">
+          <span class="prompt">$</span> echo "© 2024 Jahangir Alom"<br>
+          <span class="footer-output">© 2024 Jahangir Alom — Built with 💖 and pixel dust</span><br>
+          <span class="prompt">$</span> <span class="cursor-blink">_</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

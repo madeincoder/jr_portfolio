@@ -1,0 +1,40 @@
+{
+  "name": "jahangir-alom-portfolio",
+  "version": "1.0.0",
+  "description": "Retro-themed portfolio website showcasing projects, services, and creative full-stack development work with a pixel-perfect aesthetic.",
+  "private": true,
+  "author": "Jahangir Alom",
+  "license": "MIT",
+  "homepage": "https://jahangiralom.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jahangiralom/jr_portfolio"
+  },
+  "keywords": [
+    "portfolio",
+    "retro",
+    "pixel-art",
+    "full-stack",
+    "developer",
+    "vaporwave",
+    "synthwave"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "npx serve . -l 3000",
+    "build": "echo 'Static site — no build step required. Copy all files to your hosting provider.'",
+    "start": "npx serve . -l 3000",
+    "preview": "npx serve . -l 3000"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
