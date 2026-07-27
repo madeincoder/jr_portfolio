@@ -200,10 +200,10 @@ document.addEventListener('DOMContentLoaded', () => {
   //  5. Paste them below ↓
   //
   const EMAILJS_CONFIG = {
-    publicKey: 'YOUR_PUBLIC_KEY',    // ← From EmailJS Dashboard → Account → API Keys
-    serviceID: 'YOUR_SERVICE_ID',    // ← From EmailJS Dashboard → Email Services
-    templateID: 'YOUR_TEMPLATE_ID',  // ← From EmailJS Dashboard → Email Templates
-    toEmail: 'ctgseafood@gmail.com'  // ← Where you want to receive messages
+    publicKey: 'MkUURWxpxYN4nvCyw',
+    serviceID: 'service_wor9oht',
+    templateID: 'template_q2olef9',
+    toEmail: 'ctgseafood@gmail.com'
   };
 
   // Initialize EmailJS (only if public key is configured)
