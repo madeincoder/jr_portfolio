@@ -189,12 +189,32 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ==========================================
-  // 7. CONTACT FORM
+  // 7. CONTACT FORM — EMAILJS INTEGRATION
   // ==========================================
+  //
+  // 🚀 TO SET UP LIVE EMAIL SENDING:
+  //  1. Sign up free at https://www.emailjs.com
+  //  2. Connect your email (Gmail, Outlook, etc.) as a Service
+  //  3. Create an Email Template with variables: {{name}}, {{email}}, {{message}}
+  //  4. Get your Service ID, Template ID, and Public Key from the dashboard
+  //  5. Paste them below ↓
+  //
+  const EMAILJS_CONFIG = {
+    publicKey: 'YOUR_PUBLIC_KEY',    // ← From EmailJS Dashboard → Account → API Keys
+    serviceID: 'YOUR_SERVICE_ID',    // ← From EmailJS Dashboard → Email Services
+    templateID: 'YOUR_TEMPLATE_ID',  // ← From EmailJS Dashboard → Email Templates
+    toEmail: 'ctgseafood@gmail.com'  // ← Where you want to receive messages
+  };
+
+  // Initialize EmailJS (only if public key is configured)
+  if (EMAILJS_CONFIG.publicKey !== 'YOUR_PUBLIC_KEY') {
+    emailjs.init({ publicKey: EMAILJS_CONFIG.publicKey });
+  }
+
   const contactForm = document.getElementById('contact-form');
   if (!contactForm) return;
 
-  contactForm.addEventListener('submit', (e) => {
+  contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     const formData = new FormData(contactForm);
@@ -243,25 +263,71 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (!isValid) return;
 
-    // Disable form
+    // Disable form button
     const submitBtn = contactForm.querySelector('.form-submit');
     const formBody = contactForm.querySelector('.form-body');
     submitBtn.disabled = true;
     submitBtn.textContent = '[ SENDING... ]';
 
-    // Simulate send
-    setTimeout(() => {
+    // Check if EmailJS is configured
+    if (EMAILJS_CONFIG.publicKey === 'YOUR_PUBLIC_KEY') {
+      // Demo mode — show success message
+      setTimeout(() => {
+        formBody.innerHTML = `
+          <div class="form-success">
+            <p class="success-line">> Form submitted!</p>
+            <p class="success-line">> Thanks, ${name}!</p>
+            <br>
+            <p class="success-note">
+              [ DEMO MODE — Configure EmailJS in script.js to send live emails ]
+            </p>
+            <br>
+            <button onclick="location.reload()" class="btn btn-secondary">
+              [ SEND ANOTHER ]
+            </button>
+          </div>
+        `;
+      }, 1000);
+      return;
+    }
+
+    try {
+      // Send via EmailJS
+      await emailjs.send(
+        EMAILJS_CONFIG.serviceID,
+        EMAILJS_CONFIG.templateID,
+        {
+          to_email: EMAILJS_CONFIG.toEmail,
+          from_name: name,
+          from_email: email,
+          message: message,
+          reply_to: email
+        }
+      );
+
+      // Success!
       formBody.innerHTML = `
         <div class="form-success">
-          <p>> Message sent successfully!</p>
-          <p>> Thanks, ${name}! I'll get back to you soon.</p>
+          <p class="success-line">> ✓ Message transmitted successfully!</p>
+          <p class="success-line">> Thanks, ${name}! I'll get back to you faster than a 56k modem.</p>
           <br>
-          <p style="font-size: 0.45rem; color: #555;">
-            [ This is a demo — no actual email was sent ]
-          </p>
+          <button onclick="location.reload()" class="btn btn-secondary">
+            [ SEND ANOTHER ]
+          </button>
         </div>
       `;
-    }, 1500);
+    } catch (error) {
+      console.error('EmailJS error:', error);
+      submitBtn.disabled = false;
+      submitBtn.textContent = '[ SEND MESSAGE ]';
+
+      // Show error
+      const formError = document.createElement('div');
+      formError.className = 'form-error visible';
+      formError.textContent = '> ERROR: Failed to send. Please try again later.';
+      formError.style.marginTop = '10px';
+      formBody.appendChild(formError);
+    }
   });
 
   // ==========================================
