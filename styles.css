@@ -1275,6 +1275,42 @@ body {
   text-shadow: 0 0 10px var(--neon-cyan);
 }
 
+.contact-email {
+  margin-bottom: 24px;
+  padding: 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.contact-email:hover {
+  border-color: var(--neon-green);
+  box-shadow: 0 0 20px var(--glow-green);
+}
+
+.email-label {
+  display: block;
+  font-family: 'Courier New', monospace;
+  font-size: 0.85rem;
+  color: var(--neon-green);
+  margin-bottom: 8px;
+}
+
+.email-link {
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+  color: var(--neon-cyan);
+  text-shadow: 0 0 8px var(--glow-cyan);
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.email-link:hover {
+  color: var(--neon-green);
+  text-shadow: 0 0 15px var(--glow-green);
+}
+
 .contact-availability {
   display: flex;
   align-items: center;
